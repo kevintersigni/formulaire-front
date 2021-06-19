@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const response = await axios.post(
-        "https://monformulaire-backend.herokuapp.com/",
+        "https://monformulaire-backend.herokuapp.com/form",
         data
       );
       console.log(response);
