@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
 
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://monformulaire-backend.herokuapp.com/",
+        data
+      );
       console.log(response);
     });
 });
